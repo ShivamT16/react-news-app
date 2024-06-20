@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from "react-redux"
 import { setFilterCategory, setSearchFilter } from "./features/newsSlice"
+import { Link } from "react-router-dom"
 
 export const NavigationBar = () => {
 
@@ -28,6 +29,7 @@ export const NavigationBar = () => {
                 <option>Health</option>
                 <option>Sports</option>
             </select>
+        <Link to="/news/favourites" >Fav Articles</Link>
 
         </div>
     )

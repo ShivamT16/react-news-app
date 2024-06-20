@@ -6,7 +6,6 @@ export const NewsDetail = () => {
     const topNews = useSelector((state) => state.news.news)
     return(
         <div>
-            <h1>ND</h1>
 
         {
         topNews.filter(({source}) => source.id === id).map(({source, author, title, description, url, urlToImage, content, publishedAt, category}) =>

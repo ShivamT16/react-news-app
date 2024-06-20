@@ -4,6 +4,7 @@ import { TopNews } from './features/TopNews';
 import { NavigationBar } from './NavigationBar';
 import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import { NewsDetail } from './features/NewsDetail';
+import { Favourites } from './features/Favourites';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
      <Routes>
       <Route path="/" element={<TopNews />} />
       <Route path="/news/article/:id" element={<NewsDetail />} />
+      <Route path="/news/favourites" element={<Favourites />} />
      </Routes>
      </Router>
     </div>

@@ -11,6 +11,7 @@ export const fetchTopNews = createAsyncThunk(
 
 const initialState = {
     news: [],
+    favourites: [],
     status: "idle",
     error: null,
     filterByCategory: "All",
@@ -27,6 +28,12 @@ export const newsSlice = createSlice({
         },
         setSearchFilter: (state, action) => {
             state.searchFilter = action.payload
+        },
+        setFavourites: (state, action) => {
+            state.favourites= [...state.favourites, action.payload]
+        },
+        removeFavourite: (state, action) => {
+            state.favourites = state.favourites.filter((news) => news.source.id !== action.payload) 
         }
     },
     extraReducers: {
@@ -44,4 +51,4 @@ export const newsSlice = createSlice({
     }
 })
 
-export const {setFilterCategory, setSearchFilter} = newsSlice.actions;
+export const {setFilterCategory, setSearchFilter, setFavourites,removeFavourite } = newsSlice.actions;
