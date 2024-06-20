@@ -2,3 +2,7 @@
   text-align: center;
   margin: 0rem 1.2rem;
 }
+.navbar{
+  /* display: flex; */
+  justify-content: space-between;
+}

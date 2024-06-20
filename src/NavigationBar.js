@@ -15,7 +15,7 @@ export const NavigationBar = () => {
     }
 
     return(
-        <div>
+        <div className="navbar">
         <h1> {categoryFilter === "All" ? "Today's" : categoryFilter} News</h1>
 
         <input type="text" onChange={handleSearch} placeholder={`Search ${categoryFilter === "All" ? "Today's" : categoryFilter} News...`} />
@@ -28,7 +28,7 @@ export const NavigationBar = () => {
                 <option>Health</option>
                 <option>Sports</option>
             </select>
-            
+
         </div>
     )
 }

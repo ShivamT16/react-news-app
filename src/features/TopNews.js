@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { fetchTopNews } from "./newsSlice"
 import "./topNews.css"
+import { Link } from "react-router-dom"
 
 export const TopNews = () => {
 
@@ -24,11 +25,11 @@ export const TopNews = () => {
         <div className="main">    
         {
         newsBySearch.map(({source, author, title, description, url, urlToImage, content, publishedAt, category}) =>
-        <div key={source.id} className="news-main">
+        <Link to={`/news/article/${source.id}`} key={source.id} className="news-main">
             <p className="main-title"> {title} </p> 
             <img src={urlToImage} alt={title} className="news-image" />
             <p> {source.name} </p> 
-        </div>
+        </Link>
         ) }
         </div>
     )

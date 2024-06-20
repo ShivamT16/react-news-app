@@ -13,6 +13,8 @@
     width: 25rem;
     /* height: 22rem; */
     padding: 0rem 0.5rem;
+    text-decoration: none;
+    color: black;
 }
 .main-title{
     /* border: 1px solid blue; */
