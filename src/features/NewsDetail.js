@@ -13,8 +13,7 @@ export const NewsDetail = () => {
             <p className="main-title"> {title} </p> 
             <p> {source.name} | {author} </p>
             <img src={urlToImage} alt={title} className="news-image" />
-            <p> {description} </p>
-            <p> {content} </p>
+            <p> {description}{content} </p>
             <Link to={url} target="_blank" > Click to read full article </Link>
         </div>
         )}
