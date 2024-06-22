@@ -4,7 +4,7 @@ import axios from "axios";
 export const fetchTopNews = createAsyncThunk(
     'news/fetchTopNews',
     async () => {
-        const response = await axios.get("https://1bdb1be7-8673-4047-9006-ba4e6ff347d9-00-v5zrisg770gu.spock.replit.dev/news",)
+        const response = await axios.get("https://news-article-api-gilt.vercel.app/news",)
         return response.data;
     }
 )

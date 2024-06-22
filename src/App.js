@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { TopNews } from './features/TopNews';
 import { NavigationBar } from './NavigationBar';
-import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import { NewsDetail } from './features/NewsDetail';
 import { Favourites } from './features/Favourites';
 
@@ -12,7 +12,7 @@ function App() {
     <div className="App">
 
      <Router>
-     <Link to="/">React News Portal</Link>
+
      <NavigationBar />
      
      <Routes>

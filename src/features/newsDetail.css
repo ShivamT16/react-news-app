@@ -1,0 +1,21 @@
+.detail-main{
+    text-align: left;
+    padding: 0rem 4rem 1rem;
+}
+.detail-main img {
+    width: 100%;
+}
+.detail-main p{
+    font-size: large;
+}
+.detail-link{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 1px solid black;
+    background-color: lightsalmon;;
+    color: black;
+    border-radius: 2rem;
+    padding: .4rem .8rem;
+    margin: 0rem 0.4rem
+}

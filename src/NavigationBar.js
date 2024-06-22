@@ -17,11 +17,12 @@ export const NavigationBar = () => {
 
     return(
         <div className="navbar">
-        <h1> {categoryFilter === "All" ? "Today's" : categoryFilter} News</h1>
+        
+        <Link className="nav-link" to="/" > {categoryFilter === "All" ? "Today's" : categoryFilter} News</Link>
 
-        <input type="text" onChange={handleSearch} placeholder={`Search ${categoryFilter === "All" ? "Today's" : categoryFilter} News...`} />
+        <input className="input" type="text" onChange={handleSearch} placeholder={`Search ${categoryFilter === "All" ? "Today's" : categoryFilter} News...`} />
 
-            <select onChange={handleChange}>
+            <select className="category-input" onChange={handleChange}>
                 <option>All</option>
                 <option>National</option>
                 <option>Business</option>
@@ -29,7 +30,7 @@ export const NavigationBar = () => {
                 <option>Health</option>
                 <option>Sports</option>
             </select>
-        <Link to="/news/favourites" >Fav Articles</Link>
+        <Link className="nav-link" to="/news/favourites" >Saved Articles</Link>
 
         </div>
     )
